@@ -20,7 +20,7 @@ class CreateClientesTable extends Migration
             $table->string('correo');
             $table->string('direccion');
             $table->string('cargo');
-            $table->string('mensaje');
+            $table->longText('mensaje');
             $table->foreignId('ciudad_id')->constrained('ciudades');
             $table->timestamps();
         });

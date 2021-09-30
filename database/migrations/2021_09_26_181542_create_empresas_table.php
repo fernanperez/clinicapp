@@ -19,10 +19,12 @@ class CreateEmpresasTable extends Migration
             $table->string('nombre');
             $table->string('direccion');
             $table->string('telefono');
-            $table->string('mision')->nullable();
-            $table->string('vision')->nullable();
+            $table->string('correo');
+            $table->longText('quienes_somos');
+            $table->longText('mision')->nullable();
+            $table->longText('vision')->nullable();
             $table->string('ruta_logo')->nullable();
-            $table->string('objetivos')->nullable();
+            $table->longText('objetivos')->nullable();
             $table->string('nombre_corto')->nullable();
             $table->string('siglas')->nullable();
             $table->timestamps();
