@@ -28,5 +28,7 @@ class EmpresasSeeder extends Seeder
        $empresas->nombre_corto = '';
        $empresas->siglas = '';
 
+       $empresas->save();
+
     }
 }
